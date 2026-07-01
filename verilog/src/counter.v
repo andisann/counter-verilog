@@ -8,8 +8,8 @@
 `ifndef __COUNTER__
 `define __COUNTER__
 module counter (
-    input  clk_i;
-    input  rst_n_i;
+    input  clk_i,
+    input  rst_n_i,
     output wire [7:0] count_o
 );
 
