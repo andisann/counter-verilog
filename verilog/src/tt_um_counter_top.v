@@ -4,8 +4,8 @@
  */
 
 `default_nettype none
-
-module tt_um_example (
+`include "./counter.v"
+module tt_um_counter_top (
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
     input  wire [7:0] uio_in,   // IOs: Input path
@@ -16,8 +16,16 @@ module tt_um_example (
     input  wire       rst_n     // reset_n - low to reset
 );
 
+  // Instantiate the counter module
+  wire [7:0] count_top;
+  counter u_counter (
+      .clk_i(clk),
+      .rst_n_i(rst_n),
+      .count_o(count_top)
+  );
+
   // All output pins must be assigned. If not used, assign to 0.
-  assign uo_out  = ui_in + uio_in;  // Example: ou_out is the sum of ui_in and uio_in
+  assign uo_out  = count_top ;  // Assign the output of the counter to the dedicated output
   assign uio_out = 0;
   assign uio_oe  = 0;
 
