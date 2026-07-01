@@ -7,7 +7,7 @@
 module counter (
     input wire clk_i;
     input wire rst_n_i;
-    output wire [7:0] count_o;
+    output wire [7:0] count_o
 );
 
     reg [7:0] count;
@@ -23,4 +23,4 @@ module counter (
     assign count_o = count;
   
 
-endmodule
+endmodule // counter
