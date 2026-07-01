@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v4.0.0-prealpha (7d7b4db) (w)1999-2022 BSI
+[*] Wed Jul  1 15:06:15 2026
+[*]
+[dumpfile] "/foss/designs/Digital_Projects_Sky130A/counter-verilog/verilog/tb/counter_tb.vcd"
+[dumpfile_mtime] "Wed Jul  1 15:05:33 2026"
+[dumpfile_size] 1349
+[savefile] "/foss/designs/Digital_Projects_Sky130A/counter-verilog/verilog/tb/counter.gtkw"
+[timestart] 0
+[size] 1374 600
+[pos] -1 -1
+*-5.649615 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[treeopen] counter_tb.
+[sst_width] 276
+[signals_width] 126
+[sst_expanded] 1
+[sst_vpaned_height] 150
+@28
+counter_tb.uut.clk_i
+counter_tb.uut.rst_n_i
+@22
+counter_tb.uut.count[7:0]
+counter_tb.uut.count_o[7:0]
+[pattern_trace] 1
+[pattern_trace] 0
